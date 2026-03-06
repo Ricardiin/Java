@@ -1,0 +1,114 @@
+package Java;
+import java.util.Scanner;
+
+public class Java {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        String nomeHospede;
+        int diarias;
+        int tipoQuarto;
+        int opcaoExtra;
+
+        double valorDiaria = 0;
+        double valorExtras = 0;
+        double total;
+
+        System.out.println("----*| Youkoso ao Hotel Elpis |*-----");
+
+        //scanner pra pegar o nome digitado no teclado//
+//
+        System.out.println("");
+        System.out.print("Informe o nome do hóspede: ");
+        nomeHospede = scanner.nextLine();
+
+         //disponibilidade no scanner// 
+        System.out.println("");
+        System.out.print("Existe quarto disponível? (1-Sim / 2-Não): ");
+        int disponibilidade = scanner.nextInt();
+
+        if (disponibilidade == 1) {
+
+            System.out.println("\nTipos de quarto:");
+            System.out.println("1 - Standard - R$150,00");
+            System.out.println("2 - Superior - R$180,00");
+            System.out.println("3 - Familia - R$200,00");
+            System.out.println("4 - Luxo - R$250,00");
+            System.out.println("5 - Master - R$450,00");
+// //
+            System.out.println("");
+            System.out.print("Escolha o tipo de quarto: ");
+            tipoQuarto = scanner.nextInt();
+
+            switch (tipoQuarto) {
+                case 1:
+                    valorDiaria = 150;
+                    break;
+                case 2:
+                    valorDiaria = 180;
+                    break;
+                case 3:
+                    valorDiaria = 200;
+                    break;
+                case 4:
+                    valorDiaria = 250;
+                    break;
+                case 5:
+                    valorDiaria = 450;
+                    break;
+                default:
+                    System.out.println("Tipo inválido!");
+                    return;
+            }
+//
+            System.out.println("");
+            //informar a quantidade de diarias//
+            System.out.print("Informe a quantidade de diárias: ");
+            diarias = scanner.nextInt();
+
+            //Serviços extras//
+            System.out.println("\nServiços Extras:");
+            System.out.println("1 - Serviço de beleza - R$180,00");
+            System.out.println("2 - Aluguel de carro - R$80,00 por diária");
+            System.out.println("3 - Mesa VIP restaurante - R$220,00");
+            System.out.println("4 - Nenhum");
+
+            System.out.print("Deseja adicionar algum serviço extra? ");
+            opcaoExtra = scanner.nextInt();
+
+            switch (opcaoExtra) {
+                case 1:
+                    valorExtras += 180;
+                    break;
+                case 2:
+                    valorExtras += 80 * diarias;
+                    break;
+                case 3:
+                    valorExtras += 220;
+                    break;
+                case 4:
+                    valorExtras += 0;
+                    break;
+                default:
+                    System.out.println("Opção inválida!");
+            }
+
+            //calcular o total//
+            total = (valorDiaria * diarias) + valorExtras;
+
+            System.out.println("\n===== RESERVA CONFIRMADA =====");
+            System.out.println("Hóspede: " + nomeHospede);
+            System.out.println("Quantidade de diárias: " + diarias);
+            System.out.println("Valor total das diárias: R$ " + (valorDiaria * diarias));
+            System.out.println("Valor dos serviços extras: R$ " + valorExtras);
+            System.out.println("VALOR TOTAL A PAGAR: R$ " + total);
+
+        } else {
+            System.out.println("Desculpe, não há quartos disponíveis no momento.");
+        }
+
+        scanner.close();
+    }
+}
