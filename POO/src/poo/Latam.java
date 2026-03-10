@@ -10,7 +10,6 @@ public class Latam {
 		System.out.println("Empresa: LATAM");
 		System.out.println("Ano:"+latam.ano);
 		System.out.println("Cor:"+latam.cor);
-		latam.decolar();
 	}
 
 }

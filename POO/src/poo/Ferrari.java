@@ -3,7 +3,6 @@ package poo;
 public class Ferrari {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		//Inicia chamando a classe Carro
 		Carro ferrari = new Carro();
 		//criamos um objeto chamado Ferrari usando a classe Carro
