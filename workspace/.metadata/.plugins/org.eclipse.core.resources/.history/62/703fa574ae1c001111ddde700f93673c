@@ -1,0 +1,12 @@
+package seguros;
+import contas.Conta;
+
+public class SeguroPessoaFisica {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Conta cc3 =  new Conta();
+		cc3.cliente  
+	}
+
+}

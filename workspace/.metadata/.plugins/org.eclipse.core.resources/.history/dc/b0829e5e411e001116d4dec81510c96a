@@ -1,0 +1,32 @@
+package contas;
+
+public class PessoaJuridica {
+	public static void main(String[] args) {
+		Conta cc1 = new Conta();
+		cc1.clientes = "Cliente um";
+		cc1.saldo=10000;
+		cc1.CNPJ="03.218.406/0001-33";
+		
+		System.out.println("Cliente: "+cc1.clientes);
+		System.out.println("CNPJ: "+cc1.CNPJ);
+		cc1.exibirSaldo();
+		System.out.println("-----------------------------------");
+		Conta cc2 = new Conta();
+		cc2.clientes = "Cliente Dois";
+		cc2.saldo=50000;
+		cc2.CNPJ="40.363.723/0001-70";
+		
+		System.out.println("Cliente: "+cc2.clientes);
+		System.out.println("CNPJ: "+cc2.CNPJ);
+		cc2.exibirSaldo();
+		System.out.println("-----------------------------------");
+		Conta cc3 = new Conta();
+		cc3.clientes = "Cliente Três";
+		cc3.saldo=80000;
+		cc3.CNPJ="05.168.827/0001-22";
+		
+		System.out.println("Cliente: "+cc3.clientes);
+		System.out.println("CNPJ: "+cc3.CNPJ);
+		cc3.exibirSaldo();
+	}
+}

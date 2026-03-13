@@ -1,0 +1,45 @@
+package contas;
+
+public class PessoaFisica {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Conta cc1 = new Conta();
+		//cc1.clientes = "Diana Prince";
+		cc1.setClientes("Diana Prince");
+		//cc1.saldo=10000;
+		cc1.setSaldo(10000);
+		//System.out.println("Cliente: "+cc1.clientes);
+		System.out.println("Cliente: "+cc1.getclientes);
+
+		cc1.exibirSaldo();
+		cc1.sacar(1000);
+		cc1.exibirSaldo();
+		
+		System.out.println("-----------------------------------");
+		Conta cc2 = new Conta();
+		cc2.clientes = "Bárbara Gordon";
+		cc2.saldo=8000;
+		System.out.println("Cliente: "+cc2.clientes);
+		cc2.exibirSaldo();
+		cc2.depositar(5000);
+		cc2.exibirSaldo();
+		
+		System.out.println("-----------------------------------");
+		System.out.println("Tranferência");
+		System.out.println("Cliente: "+cc1.clientes);
+		System.out.println("Favorecido: "+cc2.clientes);
+		cc1.transferir(cc2, 2000);
+		System.out.println("");
+		System.out.println("Cliente: "+cc1.clientes);
+		cc1.exibirSaldo();
+		System.out.println("Cliente: "+cc2.clientes);
+		cc2.exibirSaldo();
+		System.out.println("-----------------------------------");
+		System.out.println("Relatório Gerencial");
+		Conta gerente = new Conta();
+		double relatorio = gerente.soma(cc1.saldo, cc2.saldo);
+		System.out.println("Saldo total nas contas: R$"+relatorio);
+	}
+
+}

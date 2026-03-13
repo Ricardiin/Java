@@ -1,0 +1,28 @@
+package exercicios;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class ConversaoTemperatura {
+
+	public static void main(String[] args) {
+		//Variavéis
+		double c,f;
+		//Objetos
+		Scanner teclado = new Scanner(System.in);
+		DecimalFormat formatador = new DecimalFormat("#0.00");
+		
+		//Entrada
+		System.out.println("Conversão de Temperatura");
+		System.out.println("Digite a temperatura em Fahrenheint");
+		f = teclado.nextDouble();
+		
+		// processamento
+		c= (5*(f-32))/9;
+		
+		// saida
+		System.out.println("Temperatura em Celsius: "+formatador.format(c)+"°C");
+		
+	}
+
+}

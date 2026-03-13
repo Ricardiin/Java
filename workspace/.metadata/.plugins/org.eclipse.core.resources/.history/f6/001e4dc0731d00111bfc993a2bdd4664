@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.Date" %>
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sdfasdasdas</title>
+</head>
+<body>
+<H1>Hello Java EE</H1>
+<%-- Comentário dentro do JAVA --%>
+<%-- mISTURANDO O html COM jAVA--%>
+<%--
+<% >% - Java dentro do HTML
+<%@ %> - Diretivas
+<%! %> - Declaraçoes
+<%- %> - Expressões
+ --%>
+ <% out.println("Richard Silva"); %>
+ 
+ <p> Data: <%=new Date() %> </p>
+ 
+ 
+</body>
+</html>

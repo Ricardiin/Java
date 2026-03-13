@@ -1,0 +1,16 @@
+package exercicios;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class ConversaoTemperatura {
+
+	public static void main(String[] args) {
+		//Variavéis
+		double c,f;
+		//Objetos
+		Scanner teclado = new Scanner(System.in);
+		DecimalFormat formatador = new DecimalFormat("#0.00");
+	}
+
+}

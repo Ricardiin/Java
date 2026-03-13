@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+C:\Users\richard.asilva16\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3843746929.index
+\Hello JSP\src\main\java
+C:\Users\richard.asilva16\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3569252248.index
+\Java EE\src\main\java

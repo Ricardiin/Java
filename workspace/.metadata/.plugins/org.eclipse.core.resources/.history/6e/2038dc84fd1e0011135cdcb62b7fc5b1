@@ -1,0 +1,32 @@
+package exercicio2;
+
+import java.util.Scanner;
+
+public class Classede3 {
+
+	public static void main(String[] args) {
+		
+		//Variáveis
+		double a,b,c,x;
+		double precofinal;
+		
+		//Objetos
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Digite o valor total do item: ");
+		a = teclado.nextDouble();
+		
+		System.out.println("Digite o desconto percentual do item: ");
+		b = teclado.nextDouble();
+		
+		c = 100; 
+		precofinal=
+	
+		x = (a * b) / c;
+		
+		System.out.println("O desconto é: " + x);
+		
+		teclado.close();
+	}
+
+}

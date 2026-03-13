@@ -1,0 +1,22 @@
+package exercicio2;
+
+import java.util.Scanner;
+
+public class Classede3 {
+
+	public static void main(String[] args) {
+		//Variavéis
+		double a,b,c,X;
+		//Objetos
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Digite o Primeiro Numero: ");
+		a=teclado.nextDouble();
+		System.out.println("Digite o Segundo Numero:");
+		b=teclado.nextDouble();
+		System.out.println("Digite o Terceiro Numero");
+		c=teclado.nextDouble();
+		
+		x=
+	}
+
+}
