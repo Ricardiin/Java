@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,12 +16,12 @@
 
 <body>
     <div class="container text-bg-warning text-center py-3">
-        <img class="img-fluid " src="img/agenda.png" alt="Agenda de contatos">
         <h1 class="text-primary text-dark">Agenda de Contato</h1>
-        <a class="btn btn-primary" href="main">Acessar</a>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <a class="btn btn-primary">Novo Contato</button>
+        </a>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+    </div>
 </body>
 
 </html>
