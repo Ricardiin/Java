@@ -17,8 +17,7 @@
 <body>
     <div class="container text-bg-warning text-center py-3">
         <h1 class="text-primary text-dark">Agenda de Contato</h1>
-        <a class="btn btn-primary">Novo Contato</button>
-        </a>
+        <a class="btn btn-primary" href="novo.html">Novo Contato</a>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
     </div>

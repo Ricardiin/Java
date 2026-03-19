@@ -8,15 +8,17 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import model.DAO;
+import model.JavaBeans;
 
 /**
  * Servlet implementation class Controller
  */
-@WebServlet("/main")
+@WebServlet({"/main","/insert"})
 public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	DAO dao = new DAO(); //TESTAR O BANCO DE DADOS
+	JavaBeans contato = new JavaBeans();
 	
     /**
      * Default constructor. 
@@ -38,11 +40,27 @@ public class Controller extends HttpServlet {
 		
 		if (action.equals("/main")) {
 			contatos(request,response);
+		}else if(action.equals("/insert")){
+			novoContato(request,response);
+		}else {
+			response.sendRedirect("index.html");
 		}
+				
 			
 		}
-		//aki
 		protected void contatos (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { 
 			response.sendRedirect("agenda.jsp");
 	}
+		
+		protected void novoContato (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { 
+			
+			
+			contato.setNome(request.getParameter("nome"));
+			contato.setFone(request.getParameter("fone"));
+			contato.setEmail(request.getParameter("email"));
+			
+			dao.inserirContato(contato);
+			response.sendRedirect("main");
+
+		}
 }
